@@ -1,0 +1,114 @@
+<html xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+<title>jQuery Select Example</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+
+.jquery-select-hidden {
+  visibility:hidden;
+  padding-right:10px;
+}
+
+.jquery-select-wrapper {
+  cursor:pointer;
+  display:inline-block;
+  position:relative;
+  font:normal 11px/22px Arial,Sans-Serif;
+  color:black;
+  border:1px solid #ccc;
+  width:100px;
+}
+
+.jquery-select {
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  background-color:white;
+  padding:0 10px;
+  font-weight:bold;
+
+}
+
+.jquery-select:after {
+  content:"";
+  width:0;
+  height:0;
+  border:5px solid transparent;
+  border-color:black transparent transparent transparent;
+  position:absolute;
+  top:9px;
+  right:6px;
+}
+
+.jquery-select:active,
+.jquery-select.jquery-select-active {
+  background-color:#eee;
+}
+
+.jquery-select-options {
+  display:none;
+  position:absolute;
+  top:100%;
+  right:0;
+  left:0;
+  z-index:999;
+  margin:0 0;
+  padding:0 0;
+  list-style:none;
+  border:1px solid #ccc;
+  background-color:white;
+  -webkit-box-shadow:0 1px 2px rgba(0,0,0,0.2);
+  -moz-box-shadow:0 1px 2px rgba(0,0,0,0.2);
+  box-shadow:0 1px 2px rgba(0,0,0,0.2);
+}
+
+.jquery-select-options li {
+  padding:0 6px;
+  margin:0 0;
+  padding:0 10px;
+}
+
+.jquery-select-options li:hover {
+  background-color:#39f;
+  color:white;
+}
+
+</style>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.select.js"></script>
+</head>
+<body>
+
+<select id="selectbox1">
+    <option value="">Select an option&hellip;</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+    <option value="4">Four</option>
+</select>
+
+<select id="selectbox2">
+    <option value="">Month&hellip;</option>
+    <option value="january">January</option>
+    <option value="february">February</option>
+    <option value="march">March</option>
+    <option value="april">April</option>
+    <option value="may">May</option>
+    <option value="june">June</option>
+    <option value="july">July</option>
+    <option value="august">August</option>
+    <option value="september">September</option>
+    <option value="october">October</option>
+    <option value="november">November</option>
+    <option value="december">December</option>
+</select>
+
+<pre>
+* Pick one or open select and type to filter
+</pre>
+</body>
+</html>
